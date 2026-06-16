@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michele Golino · Back End Engineer</title>
+  <meta name="description" content="Portfolio di Michele Golino, Back End Engineer con oltre 6 anni di esperienza in Java (Quarkus/Spring), Python e architetture a microservizi." />
+  <meta name="author" content="Michele Golino" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Michele Golino · Back End Engineer" />
+  <meta property="og:description" content="Java (Quarkus/Spring) & Python · Microservices. Costruisco sistemi che funzionano bene sotto il cofano." />
+  <meta property="og:locale" content="it_IT" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#hero">Salta al contenuto</a>
+
+  <!-- ============ GLOBAL NAV ============ -->
+  <header class="global-nav">
+    <nav class="global-nav__inner" aria-label="Navigazione principale">
+      <a class="global-nav__brand" href="#top">Michele Golino</a>
+
+      <button class="global-nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Apri menu di navigazione">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="global-nav__links" id="navLinks">
+        <li><a href="#chi-sono">Profilo</a></li>
+        <li><a href="#esperienze">Esperienze</a></li>
+        <li><a href="#formazione">Formazione</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificazioni">Certificazioni</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+
+      <div class="global-nav__utility">
+        <a href="https://github.com/micheleGolino" target="_blank" rel="noopener" aria-label="Profilo GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/michelegolino/" target="_blank" rel="noopener" aria-label="Profilo LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:michelegolino94@gmail.com" aria-label="Invia una email">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ SUB NAV (frosted) ============ -->
+  <div class="sub-nav" id="subNav">
+    <div class="sub-nav__inner">
+      <span class="sub-nav__title">Portfolio</span>
+      <div class="sub-nav__right">
+        <ul class="sub-nav__links">
+          <li><a href="#chi-sono">Profilo</a></li>
+          <li><a href="#esperienze">Esperienze</a></li>
+          <li><a href="#formazione">Formazione</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificazioni">Certificazioni</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm" href="mailto:michelegolino94@gmail.com">Contattami</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="tile tile--parchment hero" id="hero">
+      <div class="tile__inner hero__inner reveal">
+        <p class="eyebrow">Back End Engineer</p>
+        <h1 class="hero__title">Michele Golino</h1>
+        <p class="hero__lead">Java&nbsp;(Quarkus/Spring) &amp; Python · Microservices.<br />Costruisco sistemi che funzionano bene «sotto il cofano».</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="mailto:michelegolino94@gmail.com">Contattami</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/michelegolino/" target="_blank" rel="noopener">LinkedIn&nbsp;›</a>
+        </div>
+
+        <div class="hero__media">
+          <div class="avatar" id="avatar">
+            <img class="avatar__img" id="avatarImg" src="assets/profile.jpg" alt="Ritratto di Michele Golino" width="240" height="240" />
+            <span class="avatar__initials" aria-hidden="true">MG</span>
+          </div>
+        </div>
+
+        <ul class="hero__meta">
+          <li>Marcianise, Campania · Italia</li>
+          <li>6+ anni di esperienza</li>
+          <li>Ing. Informatica e dell'Automazione</li>
+          <li>Apple Developer Academy</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CHI SONO ============ -->
+    <section class="tile tile--dark" id="chi-sono">
+      <div class="tile__inner reveal">
+        <p class="eyebrow eyebrow--on-dark">Profilo</p>
+        <h2 class="tile__title">Chi sono</h2>
+        <p class="tile__lead">Software Engineer con oltre 6 anni di esperienza e una grande passione per la costruzione di sistemi che funzionano bene «sotto il cofano». Faccio comunicare le tecnologie in modo semplice ed efficiente, con un focus particolare sul mondo del Backend.</p>
+
+        <div class="about">
+          <div class="about__bio">
+            <p>Il mio pane quotidiano è l'ecosistema <strong>Java</strong>. Mi diverte progettare architetture a microservizi solide, utilizzando framework come <strong>Quarkus</strong> e <strong>Spring Boot</strong>. Credo che la qualità del software parta da un Clean Code scritto con criterio e da una gestione attenta dei dati, che siano su <strong>Oracle SQL</strong>, <strong>MongoDB</strong> o <strong>MySQL</strong>.</p>
+            <p>Mi piace sperimentare e risolvere problemi concreti. Per questo uso spesso <strong>Python</strong> e <strong>Streamlit</strong>: è il mio modo per trasformare dati grezzi in dashboard che le persone possono usare facilmente. Gestisco l'intero ciclo di vita di quello che scrivo, portandolo fino al deployment con <strong>Docker</strong>, perché mi piace avere una visione d'insieme del progetto.</p>
+            <p>Quando non programmo, cerco di tenermi aggiornato sulle nuove frontiere dell'<strong>Intelligenza Artificiale</strong> o cerco nuovi modi per migliorare le performance dei sistemi che sviluppo.</p>
+
+            <div class="about__sub">
+              <h3 class="about__sub-title">Esperienza</h3>
+              <p>Attualmente <strong>Back End Engineer</strong> presso <strong>ALTEN Italia</strong>, consulente presso IDS Ingegneria dei Sistemi. Ho precedentemente lavorato in AGM Solutions, Dedagroup e Randstad Technologies, acquisendo esperienza nei settori della fatturazione elettronica e assicurativo.</p>
+            </div>
+
+            <div class="about__sub">
+              <h3 class="about__sub-title">Lingue</h3>
+              <ul class="lang-list">
+                <li><span class="flag">🇮🇹</span> Italiano <span class="muted">— Madrelingua</span></li>
+                <li><span class="flag">🇬🇧</span> Inglese <span class="muted">— Professionale limitato</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="about__aside">
+            <div class="panel">
+              <h3 class="panel__title">Specializzazione Backend</h3>
+              <ul class="ticks">
+                <li>Architetture a Microservizi con <strong>Java</strong></li>
+                <li>Framework: <strong>Quarkus</strong> e <strong>Spring Boot</strong></li>
+                <li>Web app interattive con <strong>Python</strong> e <strong>Streamlit</strong></li>
+                <li>Database: <strong>Oracle SQL</strong>, <strong>MongoDB</strong>, <strong>MySQL</strong></li>
+                <li>Autenticazione sicura con <strong>Keycloak</strong></li>
+                <li>Containerizzazione e deployment con <strong>Docker</strong></li>
+                <li>CI/CD con <strong>Jenkins</strong></li>
+                <li>Schedulazione task con <strong>Apache Airflow</strong></li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3 class="panel__title">Approccio</h3>
+              <p>Vengo da una formazione in Ingegneria Informatica e ho avuto la fortuna di frequentare la <strong>Apple Developer Academy</strong>. Quest'ultima esperienza mi ha insegnato una cosa fondamentale: anche se lavoro sul backend, l'obiettivo finale è sempre l'utente.</p>
+              <p>Mi piace collaborare con team diversi e gestire i progetti con responsabilità, dall'idea iniziale fino alla manutenzione nel tempo. La mia passione per l'innovazione e l'adozione delle migliori pratiche, come il <strong>Clean Code</strong>, guida il mio lavoro quotidiano.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ESPERIENZE ============ -->
+    <section class="tile tile--light" id="esperienze">
+      <div class="tile__inner reveal">
+        <p class="eyebrow">Carriera</p>
+        <h2 class="tile__title">Esperienze professionali</h2>
+
+        <div class="timeline">
+          <!-- ALTEN -->
+          <article class="exp-card">
+            <h3 class="exp-card__company">ALTEN Italia</h3>
+            <div class="exp-role">
+              <div class="exp-role__meta">
+                <p class="period">Lug 2025 — Presente</p>
+                <p class="loc">Torino, Italia · Full Remote</p>
+              </div>
+              <div class="exp-role__body">
+                <p class="role-title">Back End Engineer</p>
+                <p class="role-client">Consulente presso IDS Ingegneria dei Sistemi S.p.A.</p>
+                <ul class="bullets">
+                  <li><strong>Sviluppo Backend</strong>: progettazione e implementazione di servizi backend con <strong>Spring Framework</strong> e <strong>Spring Data</strong> per la gestione dati su <strong>MongoDB</strong>.</li>
+                  <li><strong>API RESTful</strong>: sviluppo di API REST scalabili e ben documentate.</li>
+                  <li><strong>Qualità del Codice</strong>: analisi statica con <strong>SonarQube</strong>, <strong>SpotBugs</strong> e <strong>PMD</strong>; testing con <strong>JUnit</strong>.</li>
+                  <li><strong>DevOps</strong>: gestione del ciclo di sviluppo con <strong>Azure DevOps</strong>.</li>
+                  <li><strong>Java 17</strong>: utilizzo delle funzionalità moderne del linguaggio.</li>
+                </ul>
+                <ul class="tech">
+                  <li>Java 17</li><li>Spring Framework</li><li>Spring Data</li><li>MongoDB</li><li>REST API</li><li>JUnit</li><li>Azure DevOps</li><li>SonarQube</li><li>SpotBugs</li><li>PMD</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- AGM SOLUTIONS -->
+          <article class="exp-card">
+            <h3 class="exp-card__company">AGM Solutions</h3>
+            <div class="exp-role">
+              <div class="exp-role__meta">
+                <p class="period">Feb 2022 — Giu 2025</p>
+                <p class="duration">3 anni 5 mesi</p>
+                <p class="loc">Torino, Italia · Full Remote</p>
+              </div>
+              <div class="exp-role__body">
+                <p class="role-title">Software Engineer</p>
+                <p class="role-client">Consulente presso Intesa Kyndryl</p>
+                <ul class="bullets">
+                  <li><strong>Sviluppo Full-Stack</strong>: progettazione e implementazione di soluzioni software B2C e strumenti interni per un team di 10+ sviluppatori.</li>
+                  <li><strong>Microservizi Java</strong>: sviluppo con Java, Quarkus e Spring Boot, ottimizzati per scalabilità e prestazioni.</li>
+                  <li><strong>Gestione Dati</strong>: Oracle SQL, MongoDB e MySQL per volumi elevati.</li>
+                  <li><strong>Containerizzazione</strong>: Docker e Jenkins per pipeline CI/CD automatizzate.</li>
+                  <li><strong>Schedulazione Task</strong>: orchestrazione flussi di dati (DAG) con Apache Airflow.</li>
+                  <li><strong>Sviluppo Python</strong>: dashboard e applicazioni web interattive con Streamlit.</li>
+                  <li><strong>Sicurezza</strong>: autenticazione e autorizzazione centralizzata con Keycloak.</li>
+                </ul>
+                <ul class="tech">
+                  <li>Java</li><li>Quarkus</li><li>Spring Boot</li><li>Docker</li><li>Jenkins</li><li>Python</li><li>Streamlit</li><li>Apache Airflow</li><li>Keycloak</li><li>Oracle SQL</li><li>MongoDB</li><li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp-divider"></div>
+            <div class="exp-role">
+              <div class="exp-role__meta">
+                <p class="period">Ott 2020 — Feb 2022</p>
+                <p class="duration">1 anno 5 mesi</p>
+                <p class="loc">Torino, Italia · Full Remote</p>
+              </div>
+              <div class="exp-role__body">
+                <p class="role-title">Application Developer</p>
+                <p class="role-client">Consulente presso Intesa IBM</p>
+                <ul class="bullets">
+                  <li>Sviluppo e manutenzione applicativi <strong>B2B</strong> e <strong>B2C</strong> nel settore della fatturazione elettronica.</li>
+                  <li>Diagnosi e correzione bug per il miglioramento della qualità software.</li>
+                  <li>Focus su soluzioni robuste e scalabili.</li>
+                </ul>
+                <ul class="tech">
+                  <li>Java</li><li>AngularJS</li><li>Oracle SQL</li><li>CSS</li><li>JavaEE</li><li>Maven</li><li>REST</li><li>Tomcat</li><li>JBoss</li><li>Git</li><li>SVN</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- DEDAGROUP -->
+          <article class="exp-card">
+            <h3 class="exp-card__company">Dedagroup</h3>
+            <div class="exp-role">
+              <div class="exp-role__meta">
+                <p class="period">Feb 2020 — Ott 2020</p>
+                <p class="duration">9 mesi</p>
+                <p class="loc">Torino, Italia</p>
+              </div>
+              <div class="exp-role__body">
+                <p class="role-title">Junior Java Developer</p>
+                <p class="role-client">Consulente Software presso RGI Group</p>
+                <ul class="bullets">
+                  <li>Sviluppo e manutenzione applicativi <strong>B2B</strong> nel settore assicurativo.</li>
+                  <li>Soluzioni robuste e scalabili con metodologie Agile.</li>
+                </ul>
+                <ul class="tech">
+                  <li>Java</li><li>AngularJS</li><li>JavaEE</li><li>Maven</li><li>REST</li><li>Tomcat</li><li>JBoss</li><li>Git</li><li>SVN</li><li>Jira</li><li>Sonar</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- RANDSTAD -->
+          <article class="exp-card">
+            <h3 class="exp-card__company">Randstad Technologies Italia</h3>
+            <div class="exp-role">
+              <div class="exp-role__meta">
+                <p class="period">Set 2019 — Feb 2020</p>
+                <p class="duration">6 mesi</p>
+                <p class="loc">Torino, Italia</p>
+              </div>
+              <div class="exp-role__body">
+                <p class="role-title">Software Developer</p>
+                <ul class="bullets">
+                  <li>Attività di Junior Java Consultant presso Dedagroup S.p.A. fino ad assunzione interna.</li>
+                </ul>
+                <ul class="tech">
+                  <li>Java</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMAZIONE ============ -->
+    <section class="tile tile--parchment" id="formazione">
+      <div class="tile__inner reveal">
+        <p class="eyebrow">Formazione</p>
+        <h2 class="tile__title">Percorso accademico</h2>
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <div class="edu-card__meta">
+              <p class="period">Set 2022 — Apr 2024</p>
+              <p class="loc">Online</p>
+            </div>
+            <div class="edu-card__body">
+              <h3 class="edu-institution">Università degli Studi eCampus</h3>
+              <p class="degree">Laurea triennale · Ingegneria Informatica e dell'Automazione</p>
+              <p class="edu-detail">Ripresa degli studi precedentemente interrotti, iniziati presso la Prima Università degli Studi di Napoli — Federico II. Transizione dal corso di laurea in Informatica a quello in Ingegneria Informatica e dell'Automazione.</p>
+              <ul class="tech"><li>Informatica</li><li>Ingegneria Informatica</li></ul>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-card__meta">
+              <p class="period">Ott 2017 — Giu 2018</p>
+              <p class="loc">Napoli, Italia</p>
+            </div>
+            <div class="edu-card__body">
+              <h3 class="edu-institution">Apple Developer Academy @ Unina Federico II</h3>
+              <p class="degree">Studente presso Apple Developer Academy</p>
+              <p class="edu-detail">Collaborazione tra l'Università di Napoli Federico II e Apple. Formazione volta allo sviluppo di applicazioni per l'ecosistema di app più innovativo al mondo, con focus su sviluppo software, creazione di startup e design di app, e particolare enfasi su creatività e collaborazione.</p>
+              <ul class="tech"><li>Sviluppo iOS</li><li>Swift</li><li>Scrum</li><li>UI/UX Design</li></ul>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-card__meta">
+              <p class="period">Set 2014 — Dic 2017</p>
+              <p class="loc">Napoli, Italia</p>
+            </div>
+            <div class="edu-card__body">
+              <h3 class="edu-institution">Università degli Studi di Napoli Federico II</h3>
+              <p class="degree">Laurea breve in Scienze e Tecnologie Informatiche · Informatica</p>
+              <p class="edu-detail">Completato il 75% degli esami previsti dal corso di laurea. Studi sospesi temporaneamente per partecipare all'Apple Developer Academy e intraprendere attività lavorative nel settore.</p>
+              <ul class="tech"><li>SQL</li><li>Informatica</li><li>UML</li><li>Sviluppo Software</li></ul>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-card__meta">
+              <p class="period">2008 — 2014</p>
+              <p class="loc">Marcianise, Italia</p>
+            </div>
+            <div class="edu-card__body">
+              <h3 class="edu-institution">I.T.S.T. Galileo Ferraris</h3>
+              <p class="degree">Diploma di Perito Industriale Capotecnico · Informatica</p>
+              <p class="edu-detail">Votazione: 74/100. Specializzazione: Informatica Abacus.</p>
+              <ul class="tech"><li>Informatica</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="tile tile--dark" id="skills">
+      <div class="tile__inner reveal">
+        <p class="eyebrow eyebrow--on-dark">Competenze</p>
+        <h2 class="tile__title">Competenze tecniche</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">💻</span> Linguaggi di Programmazione</h3>
+            <ul class="chips">
+              <li>Java</li><li>Java 17</li><li>Python</li><li>SQL</li><li>JavaScript</li><li>CSS</li><li>HTML</li><li>Swift</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">🧩</span> Framework &amp; Librerie</h3>
+            <ul class="chips">
+              <li>Quarkus</li><li>Spring Boot</li><li>Spring Framework</li><li>Spring Data</li><li>Spring AI</li><li>Streamlit</li><li>JavaEE</li><li>AngularJS</li><li>Maven</li><li>SoapUI</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">🔄</span> DevOps &amp; CI/CD</h3>
+            <ul class="chips">
+              <li>Docker</li><li>Jenkins</li><li>Azure DevOps</li><li>Apache Airflow</li><li>Git</li><li>SVN</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">🗄️</span> Database &amp; Server</h3>
+            <ul class="chips">
+              <li>Oracle SQL</li><li>MongoDB</li><li>MySQL</li><li>Tomcat</li><li>JBoss</li><li>WebSphere</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">🔒</span> Sicurezza &amp; Qualità</h3>
+            <ul class="chips">
+              <li>Keycloak</li><li>SonarQube</li><li>SonarLint</li><li>SpotBugs</li><li>PMD</li><li>JUnit</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title"><span class="skill-card__icon">☁️</span> Cloud &amp; AI</h3>
+            <ul class="chips">
+              <li>Oracle Cloud Infrastructure</li><li>IA Generativa</li><li>Data Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICAZIONI ============ -->
+    <section class="tile tile--light" id="certificazioni">
+      <div class="tile__inner reveal">
+        <p class="eyebrow">Licenze</p>
+        <h2 class="tile__title">Certificazioni</h2>
+
+        <div class="cert-grid">
+          <article class="cert-card">
+            <h3 class="cert-card__title">Scrum Fundamentals Certified (SCF)</h3>
+            <p class="cert-card__issuer">SCRUMStudy Italia</p>
+            <p class="cert-card__date">Rilasciata · 2025</p>
+            <p class="cert-card__id">ID credenziale · 1106859</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">OCI 2025 Data Science Professional</h3>
+            <p class="cert-card__sub">Oracle Cloud Infrastructure 2025 Certified Data Science Professional</p>
+            <p class="cert-card__issuer">Oracle</p>
+            <p class="cert-card__date">Rilasciata · 2025</p>
+            <p class="cert-card__id">ID credenziale · 321208931OCI25DSOCP</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">OCI 2025 Generative AI Professional</h3>
+            <p class="cert-card__sub">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</p>
+            <p class="cert-card__issuer">Oracle</p>
+            <p class="cert-card__date">Rilasciata · 2025</p>
+            <p class="cert-card__id">ID credenziale · 321208931OCI25GAIOCP</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">OCI 2025 AI Foundations Associate</h3>
+            <p class="cert-card__sub">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</p>
+            <p class="cert-card__issuer">Oracle</p>
+            <p class="cert-card__date">Rilasciata · 2025</p>
+            <p class="cert-card__id">ID credenziale · 321208931OCI25AICFA</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">OCI 2025 Foundations Associate</h3>
+            <p class="cert-card__sub">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</p>
+            <p class="cert-card__issuer">Oracle</p>
+            <p class="cert-card__date">Rilasciata · 2025</p>
+            <p class="cert-card__id">ID credenziale · 321208931OCI25FNDCFA</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">Academy Java</h3>
+            <p class="cert-card__issuer">Forma Temp</p>
+            <p class="cert-card__date">Rilasciata · Agosto 2019</p>
+            <p class="cert-card__id">ID credenziale · P037190970PTHS</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">CCNA2 Routing and Switching</h3>
+            <p class="cert-card__sub">Routing and Switching Essentials</p>
+            <p class="cert-card__issuer">Cisco Networking Academy</p>
+            <p class="cert-card__date">Rilasciata · Giugno 2018</p>
+          </article>
+          <article class="cert-card">
+            <h3 class="cert-card__title">CCNA Routing and Switching</h3>
+            <p class="cert-card__sub">Introduction to Networks</p>
+            <p class="cert-card__issuer">Cisco Networking Academy</p>
+            <p class="cert-card__date">Rilasciata · Maggio 2018</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATTI ============ -->
+    <section class="tile tile--black contact" id="contatti">
+      <div class="tile__inner reveal contact__inner">
+        <p class="eyebrow eyebrow--on-dark">Contatti</p>
+        <h2 class="tile__title">Lavoriamo insieme</h2>
+        <p class="contact__lead">Sempre interessato a nuove sfide nel mondo del backend, dei microservizi e dell'Intelligenza Artificiale.</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="mailto:michelegolino94@gmail.com">Scrivimi una email</a>
+          <a class="btn btn--ghost-on-dark" href="https://www.linkedin.com/in/michelegolino/" target="_blank" rel="noopener">LinkedIn&nbsp;›</a>
+        </div>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:michelegolino94@gmail.com">michelegolino94@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact__label">GitHub</span>
+            <a href="https://github.com/micheleGolino" target="_blank" rel="noopener">github.com/micheleGolino</a>
+          </li>
+          <li>
+            <span class="contact__label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/michelegolino/" target="_blank" rel="noopener">in/michelegolino</a>
+          </li>
+          <li>
+            <span class="contact__label">Sede</span>
+            <span>Marcianise, Campania · Italia</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__name">Michele Golino</p>
+          <p class="footer__role">Back End Engineer · Java &amp; Python · Microservices</p>
+        </div>
+        <nav class="footer__cols" aria-label="Navigazione footer">
+          <div class="footer__col">
+            <h4>Sezioni</h4>
+            <ul>
+              <li><a href="#chi-sono">Profilo</a></li>
+              <li><a href="#esperienze">Esperienze</a></li>
+              <li><a href="#formazione">Formazione</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#certificazioni">Certificazioni</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contatti</h4>
+            <ul>
+              <li><a href="mailto:michelegolino94@gmail.com">Email</a></li>
+              <li><a href="https://github.com/micheleGolino" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/michelegolino/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__legal">
+        <p>© <span id="year">2026</span> Michele Golino. Tutti i diritti riservati.</p>
+        <p class="footer__made">Realizzato con HTML &amp; CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
